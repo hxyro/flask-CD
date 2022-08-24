@@ -4,6 +4,11 @@
 source ./stop
 # install require deps
 source ./install
+
+
+
+export PORT=80 
+echo "server is running on Port: ${PORT}"
 # start server
 source ./run &> ./server.log &
 
