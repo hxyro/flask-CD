@@ -1,6 +1,12 @@
 #!/bin/env bash
 
+# stop previously running instance if any
 source ./stop
+# install require deps
 source ./install
-source ./run &> /dev/null &
+# start server
+source ./run &> ./server.log &
+
+# Debugging
+cat ./server.log
 
