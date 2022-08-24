@@ -1,0 +1,6 @@
+#!/bin/env bash
+
+source ./stop
+source ./install
+source ./run &> /dev/null &
+
