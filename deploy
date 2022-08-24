@@ -7,6 +7,3 @@ source ./install
 # start server
 source ./run &> ./server.log &
 
-# Debugging
-cat ./server.log
-
